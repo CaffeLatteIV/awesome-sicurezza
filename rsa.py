@@ -36,7 +36,7 @@ def rsa(p,q):
 
   #finding phi(N)
   phi_n = (p - 1) * (q - 1)
-  print("phi(N) = (p-1)*(q-1) = ", phi_n)
+  print("phi(N) = (p - 1) * (q - 1) = ", phi_n)
 
   #finding e (in modo che sia relativamente primo a phi(N))
   found = False
@@ -52,8 +52,8 @@ def rsa(p,q):
   d = modinv(e, phi_n)
   print("D = ", d)
 
-  print("PublicKey = (e, n) = ", e, n)
-  print("PrivateKey = (d, n) = ", d, n)
+  print(f'PublicKey = (e, n) = ({e}, {n})')
+  print(f'PrivateKey = (d, n) = ({d}, {n})')
 
   
 try:
